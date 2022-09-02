@@ -68,13 +68,17 @@ export function FeedbackContentStep({
             focus:outline-none resize-none scrollbar-thumb-zinc-700
             scrollbar-track-transparent scrollbar-thin
           `}
-          placeholder="Conte com detalhes o que está acontecendo..."
+          placeholder="
+          Tell us in detail what's going on..."
         />
-        <footer className='flex gap-2 mt-2'>
-          <ScreenshotButton onScreenshot={screenshot} onScreenshotTook={setScreenshot} />
+        <footer className="flex gap-2 mt-2">
+          <ScreenshotButton
+            onScreenshot={screenshot}
+            onScreenshotTook={setScreenshot}
+          />
           <button
             disabled={comment.length === 0 || isSendingFeedback}
-            type='submit' 
+            type="submit"
             className={`
               p-2 bg-brand-500 rounded-md border-transparent flex-1
               flex justify-center items-center text-sm hover:bg-brand-300
@@ -83,7 +87,7 @@ export function FeedbackContentStep({
               transition-colors disabled:opacity-50 disabled:hover:bg-brand-500
             `}
           >
-            {isSendingFeedback ? <Loading /> : 'Enviar feedback'}
+            {isSendingFeedback ? <Loading /> : 'Send feedback'}
           </button>
         </footer>
       </form>

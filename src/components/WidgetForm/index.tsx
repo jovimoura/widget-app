@@ -8,24 +8,24 @@ import { FeedbackSucsessStep } from './Steps/FeedbackSuccessStep'
 
 export const feedbackTypes = {
   BUG: {
-    title: 'Problema',
+    title: 'Bug',
     image: {
       src: bugImageUrl,
-      alt: 'imagem de um inseto'
+      alt: 'image of a bug'
     }
   },
   IDEA: {
-    title: 'Ideia',
+    title: 'Idea',
     image: {
       src: ideaImageUrl,
-      alt: 'imagem de uma lampada'
+      alt: 'image of a lamp'
     }
   },
   OTHER: {
-    title: 'Outro',
+    title: 'Other',
     image: {
       src: thoughtImageUrl,
-      alt: 'imagem de uma nuvem de pensamento'
+      alt: 'image of a cloud'
     }
   }
 }
@@ -59,7 +59,7 @@ export function WidgetForm() {
         </>
       )}
       <footer className="text-xs text-neutral-400">
-        Feito por{' '}
+        Made by{' '}
         <a
           className="underline underline-offset-2"
           target="blank"

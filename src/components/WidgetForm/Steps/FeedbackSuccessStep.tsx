@@ -30,7 +30,7 @@ export function FeedbackSucsessStep({
           />
         </svg>
 
-        <span className="text-xl mt-2">Agradecemos o feedback!</span>
+        <span className="text-xl mt-2">Thanks for the feedback!</span>
 
         <button
           onClick={onRestartFeedback}
@@ -41,7 +41,7 @@ export function FeedbackSucsessStep({
             focus:ring-offset-zinc-900 focus:ring-brand-500
           `}
         >
-          Quero enviar outro feedback
+          Send other feedback
         </button>
       </div>
     </>

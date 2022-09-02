@@ -50,7 +50,7 @@ export function ToDoList({ list, onChange, onUpdate }: ToDoListProps) {
           ))}
         </>
       ) : (
-        <span className='text-gray-200 text-center'>Crie novas tarefas!</span>
+        <span className='text-gray-200 text-center'>Create new tasks!</span>
       )}
     </div>
   )
