@@ -96,20 +96,20 @@ export function App() {
                 onChange={e => setTitleItem(e.target.value)}
                 value={titleItem}
                 className="bg-transparent focus:outline-none w-full dark:text-gray-50 dark:placeholder:text-gray-50"
-                placeholder="Título"
+                placeholder="Title"
               />
               <Input
                 onChange={e => setCommentItem(e.target.value)}
                 value={commentItem}
                 className="bg-transparent focus:outline-none w-full dark:text-gray-50 dark:placeholder:text-gray-50"
-                placeholder="Comentário"
+                placeholder="Comment"
               />
               <div className="w-full flex items-center justify-center">
               <button
                   onClick={handleAddToDo}
                   className="w-32 h-9 bg-brand-300 border border-transparent rounded-md hover:bg-brand-500 transition-colors"
                 >
-                  {!isEdit? 'Adicionar' : 'Editar'}
+                  {!isEdit? 'Add' : 'Edit'}
                 </button>
               </div>
             </>
