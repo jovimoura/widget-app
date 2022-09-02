@@ -73,7 +73,7 @@ export function App() {
     <>
       <div className="flex flex-col items-center py-10">
         <h1 className='text-4xl font-bold italic mb-5'>To Do <a className='text-brand-300'>Widget</a></h1>
-        <div className="w-2/4 mb-10">
+        <div className="md:w-2/4 w-3/4 mb-10 ">
           <div className="w-4/5 flex justify-start">
             <button
               onClick={() => setViewInputs(!viewInputs)}
