@@ -28,6 +28,7 @@ export function ToDoItem({
       <button
         onClick={onCheck}
         className="w-10 h-10 flex justify-center items-center bg-green-500 border border-transparent rounded-md hover:bg-green-700 transition-colors"
+        data-testid='btn-check'
       >
         <Check size={24} className="text-white" />
       </button>
@@ -39,12 +40,14 @@ export function ToDoItem({
         <button
           onClick={onEdit}
           className="w-10 h-10 flex justify-center items-center bg-green-500 border border-transparent rounded-md hover:bg-green-700 transition-colors"
+          data-testid='btn-edit'
         >
           <Pencil size={24} className="text-white" />
         </button>
         <button
           onClick={onRemove}
           className="w-10 h-10 flex justify-center items-center bg-red-700 border border-transparent rounded-md hover:bg-red-800 transition-colors"
+          data-testid='btn-delete'
         >
           <Trash size={24} className="text-white" />
         </button>

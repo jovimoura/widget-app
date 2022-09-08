@@ -26,3 +26,7 @@ dist-ssr
 #ENV
 
 .env.local
+
+#TEST
+
+coverage

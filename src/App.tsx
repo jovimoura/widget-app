@@ -25,7 +25,6 @@ export function App() {
     Array.isArray(arr) ? setLocalDataItem(arr) : setLocalDataItem([])
   }
 
-
   useEffect(() => {
     handleLocalStorageData()
   }, [toDoItens, count])
@@ -50,7 +49,6 @@ export function App() {
       setToDoItens(newList)
       handleClear()
     }
-    
   }
 
   function handleEditToDo(id: number) {
@@ -72,7 +70,9 @@ export function App() {
   return (
     <>
       <div className="flex flex-col items-center py-10">
-        <h1 className='text-4xl font-bold italic mb-5'>To Do <a className='text-brand-300'>Widget</a></h1>
+        <h1 className="text-4xl font-bold italic mb-5">
+          To Do <a className="text-brand-300">Widget</a>
+        </h1>
         <div className="md:w-2/4 w-3/4 mb-10 ">
           <div className="w-4/5 flex justify-start">
             <button
@@ -105,17 +105,21 @@ export function App() {
                 placeholder="Comment"
               />
               <div className="w-full flex items-center justify-center">
-              <button
+                <button
                   onClick={handleAddToDo}
                   className="w-32 h-9 bg-brand-300 border border-transparent rounded-md hover:bg-brand-500 transition-colors"
                 >
-                  {!isEdit? 'Add' : 'Edit'}
+                  {!isEdit ? 'Add' : 'Edit'}
                 </button>
               </div>
             </>
           ) : null}
         </div>
-        <ToDoList onUpdate={handleEditToDo} onChange={() => setCount(count + 1)} list={localDataItem ?? toDoItens} />
+        <ToDoList
+          onUpdate={handleEditToDo}
+          onChange={() => setCount(count + 1)}
+          list={localDataItem ?? toDoItens}
+        />
       </div>
       <Widget />
     </>
